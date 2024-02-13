@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main, .overlay {
+    background: radial-gradient(#A728FA, #6228FA);
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*Sobre, apertura y animación*/
+.sobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    flex-direction: column;
+}
+.imgSobre{
+    width:50%;
+    height: 50%;
+    transition: all 0.70s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    
+}
+.imgSobre:hover {
+    transform: scale(1.2);
+}
+
+/*Pregunta (imagen)*/
+.pregunta{
+    display:none;
+}
+
+/*Botones*/
+.botones{
+    display:none;
+}
+
+.boton{
+    width: 10rem; 
+    height: 10rem; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none; 
+    background-color: transparent;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+}
+
+#si{
+    background-image: url('Img/4.png'); 
+    top: 21%; 
+    left: 35%;
+    transition: all 0.20s ease-in-out;
+}
+
+#si:hover{
+    transform: scale(1.2);
+}
+
+#obvio{
+    background-image: url('Img/5.png');
+    top: 24%; 
+    left: 48%;
+    transition: all 0.20s ease-in-out;
+}
+#obvio:hover{
+    transform: scale(1.2);
+}
+
+/*Overlay y fin*/
+.overlay {
+    /* Tu código CSS existente */
+    transition: opacity 0.8s ease; 
+    opacity: 0; 
+    z-index: -1;
+}
+
+.overlay.visible {
+    opacity: 1; 
+    z-index: 999;
+}
+
+.imgFin{
+    width: 60%;
+}
+
+/*Responsive*/
+/* Para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    #si {
+        width: 8rem; /* Reducir el tamaño del botón */
+        height: 8rem;
+        top: 19%; /* Ajustar la posición del botón "si" */
+        left: 34%;
+    }
+
+    #obvio {
+        width: 8rem; /* Reducir el tamaño del botón */
+        height: 8rem;
+        top: 24%; /* Ajustar la posición del botón "obvio" */
+        left: 48%;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    #si {
+        width: 5rem; /* Reducir el tamaño del botón */
+        height: 5rem;
+        top: 16%; /* Ajustar la posición del botón "si" */
+        left: 31%;
+    }
+
+    #obvio {
+        width: 5rem; /* Reducir el tamaño del botón */
+        height: 5rem;
+        top: 21%; /* Ajustar la posición del botón "obvio" */
+        left: 48%;
+    }
+}
