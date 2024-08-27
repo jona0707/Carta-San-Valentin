@@ -1,4 +1,4 @@
-# Una cara rápida para Nicole, mi pareja.
+# Una carta para tu pareja (En mi caso, para Nicole<3)
 En caso de querer replicar esta carta, simplemente seguir los siguientes pasos:
 
 1. Copiar el repositorio (recomiendo utilizar VSC).
